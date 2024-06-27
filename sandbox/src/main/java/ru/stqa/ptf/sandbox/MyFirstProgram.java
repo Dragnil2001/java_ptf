@@ -1,4 +1,4 @@
-
+package ru.stqa.ptf.sandbox;
 
 public class MyFirstProgram {
 

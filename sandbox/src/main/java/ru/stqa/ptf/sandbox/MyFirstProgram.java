@@ -7,23 +7,22 @@ public class MyFirstProgram {
         hello("user");
         hello("Zarif");
 
-        double l = 5;
-        System.out.println("Площадь квадрата " + l + " = " + area(l));
+        Sqare s = new Sqare(5);
+        System.out.println("Площадь квадрата " + s.l + " = " + area(s));
 
-        double a = 4;
-        double b = 6;
-        System.out.println("Площадь второго квадрата " + a + " и " + b + " = " + area(a, b));
+        Rectangle r = new Rectangle(4, 6);
+        System.out.println("Площадь второго квадрата " + r.a + " и " + r.b + " = " + area(r));
 
     }
     public static void hello(String somebody) {
         System.out.println("Hello, " + somebody + "!");
     }
 
-    public static double area(double len) {
-        return len * len;
+    public static double area(Sqare s) {
+        return s.l * s.l;
     }
 
-    public static double area(double a, double b) {
-        return a * b;
+    public static double area(Rectangle r) {
+        return r.a * r.b;
     }
 }
